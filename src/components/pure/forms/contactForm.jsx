@@ -30,7 +30,7 @@ const ContactForm = ({add}) => {
 
 
 ContactForm.propTypes = {
-
+    add:PropTypes.func.isRequired
 };
 
 

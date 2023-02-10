@@ -19,11 +19,9 @@ const TaskListComponent = () => {
 
 
     const [tasks, setTasks] = useState([task1, task2, task3]);
-    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         console.log('Task State has been modified');
-        setLoading(false);
         return () => {
             console.log('Task Component is going to unmount ...');
         }
@@ -47,7 +45,6 @@ const TaskListComponent = () => {
     }
     function addTask(task) {
         console.log('Add this Task:', task)
-        const index = tasks.indexOf(task);
         const tempTask = [...tasks];
         tempTask.push(task);
         setTasks(tempTask);
@@ -81,7 +78,6 @@ const TaskListComponent = () => {
                                             completed={completeTask}
                                             remove={deleteTask}
                                              ></TaskComponent>
-
                                     )
                                 })}
                             </tbody>

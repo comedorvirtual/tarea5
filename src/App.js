@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import TaskListComponent from './components/container/task_list';
-import GreetingStyled from './components/pure/greetingStyled';
-import Father from './components/container/father';
+// import TaskListComponent from './components/container/task_list';
+// import GreetingStyled from './components/pure/greetingStyled';
+// import Father from './components/container/father';
 import ContactListComponent from './components/container/contact_list';
+import OptionalRender from './components/pure/optionalRender';
+import SquareRender from './components/pure/squareRender';
 
 function App() {
   return (
@@ -14,8 +15,12 @@ function App() {
           {/* <GreetingStyled name="Martin"></GreetingStyled> */}
       {/* </header> */}
       {/* <TaskListComponent></TaskListComponent> */}
-      <ContactListComponent></ContactListComponent>
+      {/* <ContactListComponent></ContactListComponent> */}
       {/* <Father></Father> */}
+
+      {/* Ejemplos de Renderizado condicional */}
+      {/* <OptionalRender></OptionalRender> */}
+      <SquareRender></SquareRender>
     </div>
   );
 }
