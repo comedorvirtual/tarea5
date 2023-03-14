@@ -1,4 +1,3 @@
-import React, { Component } from 'react'
 import { LEVELS } from './levels.enum';
 
 export class Task {

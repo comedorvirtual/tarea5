@@ -26,7 +26,6 @@ const SquareRender = () => {
 
     const [action, setAction] = useState(true);
     const divRef = useRef('')
-    const divRef2 = useRef('')
 
     let colorInterval;
 
